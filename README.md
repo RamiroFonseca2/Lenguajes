@@ -1,1 +1,22 @@
-# Lenguajes
+Ramiro Fonseca
+Lenguajes
+Universidad Catolica de La Plata
+2/9/2025
+A continuacion voy a dar mi explicacion de como funciona el programa piedra_papel_tijeraV2.py linea por linea y como lo ejecuté:
+1-Nombre del programa comentado
+2-Primeramente importamos la libreria "random" para poder usarla luego en la eleccion al azar de piedra, papel o tijera
+3-Cargamos una lista con las posibles opciones que puede elegir el usuario
+Carga de proceso "ValidarResultado" que hace la validacion por fuera del programa principal y devuelve true o false en caso que corresponda
+Inicializacmos varialbes tales como "ronda_totales" que alamcena el valor de "el mejor de" y "rondas_ganar" que almacena el valor que necesita un jugador para ser "inalcanzable"
+Inicia el While, como condicion que (la ronda actual sea <= a las rondas totales) Y ((los puntos del usuario sean menores a las rondas para ganar) O (los puntos de pc sean menores a las rondas para ganar)) 
+  Dentro del while
+  Le pide ingresar una opcion al usuario
+  Si esta dentro de las opciones cargadas en la lista al principio del codigo, sigue. Sino arroja cartel de "Entrada no valida" y pide volver a cargar, sin sumar la ronda
+  Luego "elije" una opcion la pc
+  Si son iguales resta una ronda, ya que luego va a ser sumada. #Habian dos opciones para hacerlo, la primera era asi y la segunda era que se sumen cuando gana y cuando pierde, es lo mismo, cumple con el enunciado.
+  Sino valida los resultados
+    si gano el usuario, suma 1 a los puntos del usuario
+  sino
+    suma punto a la pc
+  Suma y pasa a la siguiente ronda. En este caso si empata suma, pero ya se resto dentro del if del empate
+  Fuera del while muestra los resultados y compara los puntos finales, el que tiene mas gana y lo muestra en pantalla
