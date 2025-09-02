@@ -21,3 +21,5 @@
 -    Suma y pasa a la siguiente ronda. En este caso si empata suma, pero ya se resto dentro del if del empate
 -    Una vez, el while sea cortado por alguno de los resultados ganadores o se lleguen a 5 rondas con resultado
 -    Fuera del while muestra los resultados y compara los puntos finales, el que tiene mas gana y lo muestra en pantalla
+
+-    En mi caso para compilé y edité el codigo por medio de Visual Studio Code, descargando Python 3.11 en mi PC e instalando las extensiones de Visual Studio para poder procesar python, luego aplicamos las configuraciones necesarias para ejecutar python en la terminal de visual studio. Para correrlo simplemente descarguelo presione click derecho, abrin con... y seleccione Python, si lo tiene instalado.
